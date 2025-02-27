@@ -1,7 +1,4 @@
 import express from 'express';
-import dotenv from 'dotenv';
-// import {dbConnect} from "./config/db"
-// import authRoutes from './routes/auth.routes'
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import dbConnect from './src/config/db.js';
@@ -10,8 +7,8 @@ import { ClassName, Medium, Subject } from './src/models/table.model.js';
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-
-
+//  npm i express cors nodemon mongodb mongoose -> server / backend 
+//  npm i axios -> client / forented 
 const corsOptions = {
     origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
